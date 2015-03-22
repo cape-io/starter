@@ -12,14 +12,13 @@ For use with cape.io react website hosting.
 
 ## Download a zip of this repo to start a new website.
 1. `wget https://github.com/cape-io/starter/archive/master.tar.gz`
-2. `mkdir newsite && tar -zxvf master.tar.gz -C newsite --strip-components=1 && rm master.tar.gz && cd newsite`
-3. `git init`
+2. `mkdir newsite && tar -zxvf master.tar.gz -C newsite --strip-components=1 && rm master.tar.gz`
+3. `cd newsite && git init && git add . && git commit -am 'init commit'`
 1. Change the information in package.json
   1. name (Should be the machine name. AKA `siteId`.
   2. homepage (The final URL for the site. Must have /index.json active and working.
   3. repository, author, bugs, also need to be changed with the correct values.
 2. `npm i`
-3. `git add . && git commit -am 'init commit'`
 3. `gulp`
 4. Your default browser should open to http://localhost:3000
 5. Edit files in app/view/ and watch the changes happen.
