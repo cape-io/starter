@@ -1,6 +1,6 @@
 # Starter React Site
 
-For use with cape.io
+For use with cape.io react website hosting.
 
 ## Download a zip of this repo to start a new website.
 
