@@ -1,5 +1,6 @@
 {
   "name": "react-starter",
+  "homepage": "https://www.cape.io",
   "version": "0.0.1",
   "description": "",
   "repository": {
@@ -15,7 +16,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://www.cape.io",
   "dependencies": {
     "lodash": "3.x",
     "react": "0.13.x",
