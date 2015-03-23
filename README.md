@@ -2,7 +2,7 @@
 
 For use with cape.io react website hosting.
 
-## Decide on a content "repo/database"
+## Decide on a content repo/database/feed
 * Easiest to use a https://www.supersimple.co directory.
 * Create a _cname.txt file for the url of the database. `db.example.com`
 
