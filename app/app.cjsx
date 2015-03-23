@@ -20,7 +20,7 @@ App = (data, render, onError, onAbort) ->
 
   if inBrowser
     # Attach app to global window var as app.
-    window.app = data = res.body
+    window.app = data
     Router.run Routes, Router.HistoryLocation, Render
   else
     r = Router.create {
@@ -42,7 +42,7 @@ if inBrowser
         # Do nothing when we don't get the data.
         return console.error err or res
       # Trigger render.
-      App data, render
+      App res.body, render
       console.log 'Init react with data.'
 
 module.exports = App

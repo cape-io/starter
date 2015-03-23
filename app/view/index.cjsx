@@ -3,6 +3,7 @@ React = require 'react'
 {RouteHandler, State} = require 'react-router'
 
 module.exports = React.createClass
+  mixins: [State]
   render: ->
     {sha, description, author, title} = @props
     appFileName = sha or 'app'
