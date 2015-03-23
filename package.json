@@ -30,6 +30,6 @@
   "devDependencies": {
     "cape-gulp": "git+https://github.com/cape-io/cape-gulp.git",
     "gulp": "3.x",
-    "coffee-script": "^1.9.1"
+    "coffee-script": "1.x"
   }
 }
