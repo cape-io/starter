@@ -9,7 +9,7 @@ inBrowser = typeof window isnt "undefined"
 
 # The goal with this is to have the server and client call the same function to
 # init the app.
-App = (data, render) ->
+App = (data, render, onError, onAbort) ->
   if not data.path then data.path = '/'
   # Process the initial data. (index.json)
   data = processData(data)
@@ -23,7 +23,13 @@ App = (data, render) ->
     window.app = data = res.body
     Router.run Routes, Router.HistoryLocation, Render
   else
-    Router.run Routes, data.path, Render
+    r = Router.create {
+      routes: Routes
+      location: data.path
+      onError: onError
+      onAbort: onAbort
+    }
+    r.run Render
 
 if inBrowser
   window.onload = -> # Attach event handlers.
