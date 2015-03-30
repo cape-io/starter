@@ -19,13 +19,15 @@
   "dependencies": {
     "lodash": "3.x",
     "react": "0.13.x",
+    "react-router": "0.13.x",
     "react-bootstrap": "0.x",
-    "react-router": "0.x",
     "react-router-bootstrap": "0.x",
     "superagent": "0.x",
     "moment": "2.x",
     "ampersand-state": "4.x",
-    "ampersand-collection": "1.x"
+    "ampersand-collection": "1.x",
+    "validator": "3.x",
+    "qs": "2.x"
   },
   "devDependencies": {
     "cape-gulp": "git+https://github.com/cape-io/cape-gulp.git",
