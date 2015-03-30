@@ -34,3 +34,4 @@ node_modules
 /npm-debug.log
 /app/data
 /tmp/
+.DS_Store
