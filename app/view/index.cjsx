@@ -1,9 +1,11 @@
 React = require 'react'
 {Link} = require 'react-router'
-{RouteHandler, State} = require 'react-router'
+{RouteHandler} = require 'react-router'
 
 module.exports = React.createClass
-  mixins: [State]
+  contextTypes: {
+    router: React.PropTypes.func.isRequired
+  }
   render: ->
     {sha, description, author, title} = @props
     appFileName = sha or 'app'
